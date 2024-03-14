@@ -1,7 +1,7 @@
 module.exports = {
     apps: [{
         name: "milvus-docker",
-        script: "docker-compose",
+        script: "sudo docker compose",
         args: "up",
         watch: false,
         autorestart: false,
