@@ -4,8 +4,6 @@ module.exports = {
         script: "docker-compose",
         args: "up",
         watch: false,
-        max_memory_restart: "1000M",
-        autorestart: true,
-        max_restarts: 10,
+        autorestart: false,
     }]
 }
