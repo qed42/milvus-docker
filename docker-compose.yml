@@ -21,7 +21,7 @@ services:
 
   standalone:
     container_name: milvus-standalone
-    image: milvusdb/milvus:v2.3.10
+    image: milvusdb/milvus:v2.4.11
     command: ["milvus", "run", "standalone"]
     security_opt:
       - seccomp:unconfined
@@ -48,7 +48,7 @@ services:
   
   attu:
     container_name: milvus-attu
-    image: zilliz/attu:v2.3.8
+    image: zilliz/attu:v2.4.8
     ports:
       - "9191:3000"
     environment:
